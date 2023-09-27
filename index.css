@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,3 +189,38 @@ h4 {
 .blog-item.active {
     background: var(--main-blue, #478BF9);
 }
+.banner-bg{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    column-gap: 18px;
+}
+
+.line-items{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 100px;
+}
+.line-items .item{
+        display: flex;
+    flex-direction: column;
+
+gap: 27px;    transition: all 0.1s ease-in-out;
+}
+.marquee {
+    animation: scroll 10s linear infinite;
+  }
+  .reverce{
+    animation-direction: reverse;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateZ(0);
+    }
+    to {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
+
