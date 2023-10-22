@@ -47,6 +47,69 @@ p {
     padding: 0;
 }
 
+/* backgroung items img */
+.icon-m-white {
+    background-image: url(./assets/icons/M_white.svg)
+}
+
+.icon-m-green {
+    background-image: url(./assets/icons/M_green.svg)
+}
+
+.icon-m-blue {
+    background-image: url(./assets/icons/M_blue.svg)
+}
+
+.icon-crown {
+    background-image: url(./assets/icons/Crown.svg)
+}
+
+.icon-S {
+    background-image: url(./assets/icons/$.svg)
+}
+
+/* .icon-planet{
+    background-image: url(./assets/icons/Planet.svg)
+} */
+.icon-shield {
+    background-image: url(./assets/icons/Shield.svg)
+}
+
+.icon-soccer {
+    background-image: url(./assets/icons/Soccer.svg)
+}
+
+.icon-soccer-purple {
+    background-image: url(./assets/icons/adaptive/Soccer_1.svg)
+}
+
+.icon-timer {
+    background-image: url(./assets/icons/Timer.svg)
+}
+
+.icon-world {
+    background-image: url(./assets/icons/World.svg)
+}
+
+@media(max-width: 1024px) {
+
+    .icon-S {
+        background-image: url(./assets/icons/adaptive/$.svg)
+    }
+
+    .icon-planet {
+        background-image: url(./assets/icons/adaptive/pl.svg)
+    }
+
+    .icon-world {
+        background-image: url(./assets/icons/adaptive/World.svg)
+    }
+
+}
+
+/* backgroung items img */
+
+
 button {
     font-family: 'Lexend', sans-serif;
     color: var(--main-clean-white);
@@ -225,6 +288,17 @@ h4 {
     transition: all 0.1s ease-in-out;
 }
 
+.item div {
+    height: 100px;
+    width: 100px;
+}
+
+.item div.icon-S,
+.item div.icon-world,
+.item div.icon-crown-L {
+    height: 221px;
+}
+
 .marquee {
     animation: scroll 10s linear infinite;
 }
@@ -399,6 +473,14 @@ h4 {
         width: 80px;
     }
 
+    .item div {
+        height: 80px;
+        width: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
     .footer {
         padding: 24px 30px;
         height: 100px;
@@ -468,18 +550,28 @@ h4 {
         height: 100vw;
     } */
 
-    .banner-bg{
+    .banner-bg {
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
     }
+
     .line-items {
         width: 100%;
         flex-direction: row;
     }
-    .item{
+
+    .item {
         flex-direction: row;
+    }
+    .item div.icon-S,
+    .item div.icon-world,
+    .item div.icon-crown-L {
+        width: 180px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .blog-container {
